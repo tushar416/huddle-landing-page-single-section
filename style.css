@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--Violet);
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  margin-right: auto;
+}
+.container {
+  display: flex;
+
+  margin: 5rem 0;
+}
+
+.container img {
+  width: 60%;
+  margin: auto;
+}
+
+.right-div {
+  color: #fff;
+  margin-left: 3rem;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2.8rem;
+  margin: 2rem auto;
+
+  font-family: "poppins", sans-serif;
+}
+p {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+.btn {
+  color: hidden;
+  background-color: #fff;
+  padding: 1rem 4rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: var(--Soft-Magenta);
+  color: #fff;
+}
+.social-icons {
+  margin-left: auto;
+}
+.social-icons i {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: 1rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.3rem 0.4rem;
+}
+.social-icons i:hover {
+  color: var(--Soft-Magenta);
+  border: 1px solid var(--Soft-Magenta);
+}
+.fa-facebook-f {
+  padding: 0.3rem 0.5rem !important;
+}
+.attribution {
+  color: #fff;
+  text-align: center;
+}
+.attribution a {
+  color: #fff;
+}
+
+/* media query */
+@media (max-width: 1252px) {
+  .container img {
+    width: 90%;
+    margin: auto;
+  }
+  .container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .right-div {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+  }
+
+  h1 {
+    line-height: 1.2;
+    font-size: 2.3rem;
+  }
+  .container img {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    background-image: url("images/bg-mobile.svg");
+    background-position: top;
+    background-size: contain;
+  }
+
+  h1 {
+    line-height: 1.2;
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 150px;
+  }
+  .social-icons {
+    margin: auto;
+  }
+}
